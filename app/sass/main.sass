@@ -9,6 +9,10 @@
 	background-color: $accent
 	color: #fff
 
+a
+	&:hover 
+		text-decoration: none
+
 * 
 	outline: 0 !important
 
@@ -44,89 +48,44 @@ b, strong
 
 // my style
 
-.header
+.header__menu
 	width: 100%
-	height: 82px
+	height: 88px
 	background-color: #fff
-	box-shadow: 15px 15px 20px 15px rgba(240, 241, 243, 0.8)
 
-.header__content
+.menu__block
 	width: 100%
-	height: 82px
 	display: flex
 	justify-content: space-between
-	align-items: center
 
-.header__logo
-	width: 200px
-	height: 82px
+.logo__block
+	width: 35%
+	height: 88px
 	display: flex
 	align-items: center
 
-
-.menu 
-	width: 550px
-	height: 82px
+.menu
+	width: 65%
+	height: 88px
 	display: flex
 	align-items: center
-	justify-content: space-between
-	ul 
-		display: flex
-		padding: 0px
-		margin: 0px
-	li 
-		margin-left: 25px
-		a 
-			text-decoration: none
-			color: #000
-			&:hover 
-				width: 100%
-				border-bottom: 3px solid #93E33D
-				// background: url(../img/hover.png) no-repeat center
-				
-			  
+	justify-content: flex-end
 
-.menu__list
-	position: relative
-	&:hover .menu__hidden
-		visibility: visible
-
-.menu__hidden
-	// opacity: 0
-	display: block
-	visibility: hidden
-	width: 160px
-	height: 150px
-	background-color: #fff
-	position: absolute
-	z-index: 10
-	left: 59%
-	top: 3.5%
-	overflow: hidden
+.burger__icon
+	width: 30px
+	height: 30px
 	display: flex
+	align-items: space-between
 	flex-wrap: wrap
-	ul 
-		padding: 0px
-		margin: 0px
-	li 
-		list-style: none
-		border-bottom: 1px solid #ccc
-		width: 180px
-		height: 25%
-		display: flex
-		justify-content: flex-start
-		align-items: center
-		padding-left: 15px
-		&:hover 
-			background-color: #F0F0F0
-	a 
-		color: #000
-		text-decoration: none
-	
-.hidden__arrow
-	width: 100%
-	height: 4px
-	background: url(../img/Figure.png) no-repeat center
+	margin-left: 15px
+	&:hover 
+		cursor: pointer
+
+.line 
+	width: 30px
+	height: 3px
+	background-color: #000
+
 
 .li__block 
 	&:before
@@ -134,6 +93,81 @@ b, strong
 		content: "\f054"
 		margin-right: 5px
 		color: #93E33D
+
+nav
+  text-align: center
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+  a
+    text-decoration: none
+    display: block
+    color: #000
+
+.topmenu 
+	li
+		border-bottom: 3px solid #fff
+		display: inline-block
+    position: relative
+		&:hover
+			color: green
+			border-bottom: 3px solid #93E33D		
+		a 
+			position: relative
+    	padding: 10px 15px
+			&:hover 
+				color: #93E33D
+			
+					
+.topmenu
+  > li
+    display: inline-block
+    position: relative
+    > a
+      position: relative
+      padding: 10px 15px
+  li:hover a:before
+    transform: translate(-50%, 0)
+    opacity: 1
+
+.submenu
+	visibility: hidden
+	width: 160px
+	height: 150px
+	background-color: #fff
+	position: absolute
+	z-index: 4
+	left: 50%
+	top: 115%
+	overflow: hidden
+	display: flex
+	flex-wrap: wrap
+	transform: translate(-50%, 20px)
+	transition: .3s	
+	ul 
+		padding: 0px
+		margin: 0px
+	li 
+		list-style: none
+		border-bottom: 1px solid #DEE0E1
+		width: 180px
+		height: 25%
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		padding-left: 15px
+		&:hover 
+			border: none
+	a 
+		color: #000
+		text-decoration: none
+		
+.topmenu > li:hover .submenu
+  visibility: visible
+  opacity: 1
+  transform: translate(-50%, 0)
+	
 
 // Основной контент
 
