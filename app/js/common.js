@@ -1,7 +1,5 @@
 $(function() {
 
-	
-
 	// tabs
 	$("#tabs").tabs();
 
@@ -21,7 +19,6 @@ $(function() {
 			$('#mobile__menu').removeAttr('style');
 		}
 	});
-
 
 
 });
