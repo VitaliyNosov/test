@@ -34,7 +34,7 @@
 
 
 	
-
+  <!-- model window popup -->
 
 	<div class="hidden">
 
@@ -55,7 +55,7 @@
 				<input type="text" id="number" required autocomplete="off"><label for="number">Номер телефона*</label>
 			</div>
 			<div class="form__lorem">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, exercitationem magnam. Similique harum eveniet recusandae
+				*Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, exercitationem magnam. 
 			</div>
 			<div class="button__content">
 				<button>Записатся</button>
@@ -66,6 +66,25 @@
 		
 	</div>
 
+	
+
+	<div id="mobile__menu" class="mobile__menu">
+		<div class="icon menu__triger">
+			<i class="fas fa-times"></i>
+		</div>
+		<div class="mobile__menu__content">
+				<nav class="mobile__list">
+					<ul>
+						<li><a href="">IT-обучение</a></li>
+						<li><a href="">На каникулах</a></li>
+						<li><a href="">События</a></li>
+						<li><a href="">Контакты</a></li>
+						<li><a href="">Вакансии</a></li>
+					</ul>
+				</nav>
+		</div>
+	</div>
+
 
 	<!-- header menu -->
 
@@ -73,35 +92,42 @@
 	<div class="header__menu">
 		<div class="container">
 			<div class="row">
-				<div class="menu__block">
-	
-					<div class="logo__block">
-						<img src="img/Logo.png" alt="#">
-					</div>
-					<div class="menu">
-						<nav>
-							<ul class="topmenu">
-								<li><a href="">IT-обучение</a></li>
-								<li><a href="" class="down">На каникулах</a>
-									<ul class="submenu">
-										<li class="li__block"><a href="">Пункт меню #1</a></li>
-										<li class="li__block"><a href="">Пункт #2</a></li>
-										<li class="li__block"><a href="">Подпункт #3</a></li>
-										<li class="li__block"><a href="">Меню #4</a></li>
-									</ul>
-								</li>
-								<li><a href="">События</a></li>
-								<li><a href="">Контакты</a></li>
-								<li><a href="">Вакансии</a></li>
-							</ul>
-						</nav>
-						<div class="burger__icon">
-							<div class="line"></div>
-							<div class="line"></div>
-							<div class="line"></div>
+				<div class="col-xl-12 col-md-12 col-sm-12">
+					<div class="menu__block">
+					
+						<div class="logo__block"></div>
+
+						<div class="menu__mobile__block">
+						<span>
+							<i class="fas fa-phone-alt"></i>
+						</span>	(068) 333 05 23
 						</div>
+
+						<div class="menu">
+							<nav>
+								<ul class="topmenu">
+									<li><a href="">IT-обучение</a></li>
+									<li><a href="" class="down">На каникулах</a>
+										<ul class="submenu">
+											<li class="li__block"><a href="">Пункт меню #1</a></li>
+											<li class="li__block"><a href="">Пункт #2</a></li>
+											<li class="li__block"><a href="">Подпункт #3</a></li>
+											<li class="li__block"><a href="">Меню #4</a></li>
+										</ul>
+									</li>
+									<li><a href="">События</a></li>
+									<li><a href="">Контакты</a></li>
+									<li><a href="">Вакансии</a></li>
+								</ul>
+							</nav>
+							<div class="burger__icon menu__triger">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+						</div>
+					
 					</div>
-	
 				</div>
 			</div>
 		</div>
@@ -111,39 +137,52 @@
 			
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-6">
-					<div class="content__block">
-						<div class="content__block__header">
-							<h2>IT-Школа <span>SMART</span></h2>
-							<div class="line__img">
-								<img src="img/line_2.png" alt="#">
+				<div class="col-xl-6 col-md-6 col-sm-12 order-sm-first order-last">
+
+				
+						
+						<div class="content__block">
+							<div class="content__block__header">
+								<h2>IT-Школа <span>SMART</span></h2>
+								<div class="line__img">
+									<img src="img/line_2.png" alt="#">
+								</div>
+							</div>
+							<div class="content__block__text">
+								— это внешкольное образование нового поколения, для развития и
+								самореализации детей через IT
+							</div>
+							<div class="content__block__text__info">
+								С помощью современных технологий мы развиваем у школьников знания
+								о бизнесе, навыки общения и управления собой.
+							</div>
+							<div class="content__block__button">
+								<button href="#form" class="popup">Записаться</button>
 							</div>
 						</div>
-						<div class="content__block__text">
-							— это внешкольное образование нового поколения, для развития и
-							самореализации детей через IT
-						</div>
-						<div class="content__block__text__info">
-							С помощью современных технологий мы развиваем у школьников знания
-							о бизнесе, навыки общения и управления собой.
-						</div>
-						<div class="content__block__button">
-							<button href="#form" class="popup">Записаться</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-6">
-					<div class="content__foto__block">
-						<img src="img/Men.png" alt="#">
-					</div>
+
 				</div>
 
-				<div class="col-xl-6">
+						<div class="col-xl-6 col-md-6 col-sm-12 order-sm-last order-first">
+							<div class="content__foto__block">
+								<img class="img-responsive" src="img/Men.png" alt="#">
+							</div>
+						</div>
+
+		</div>	
+
+		</div>
+
+
+			<div class="container">
+				<div class="row">
+
+				<div class="col-xl-6 col-md-6 col-sm-12">
 					<div class="content__block__foto">
-						<img src="img/Girl.png" alt="#">
+						<img class="img-responsive" src="img/Girl.png" alt="#">
 					</div>
 				</div>
-				<div class="col-xl-6">
+				<div class="col-xl-6 col-md-6 col-sm-12">
 					<div class="content__block__tabs">
 						
 						<div class="tab-block">
@@ -247,19 +286,43 @@
 					<div class="container">					
  						<div class="col-xl-12">
 							<div class="content__block__fotos">
+
 								<div class="row__one">
-									<div class="img__3"></div>
-									<div class="img__4"></div>
-									<div class="img__1"></div>
-									<div class="img__5"></div>
-									<div class="img__10"></div>
-								</div>
+
+									<div class="img__3">
+										<!-- <img src="img/3.png" alt=""> -->
+									</div>
+									<div class="img__4">
+										<!-- <img src="img/4.png" alt=""> -->
+									</div>
+									<div class="img__1">
+										<!-- <img src="img/1.png" alt=""> -->
+									</div>
+									<div class="img__5">
+										<!-- <img src="img/5.png" alt=""> -->
+									</div>
+									<div class="img__10">
+										<!-- <img src="img/10.png" alt=""> -->
+									</div>
+								
+									</div>
+
 								<div class="row__two">
-									<div class="img__8"></div>
-									<div class="img__9"></div>
-									<div class="img__2"></div>
-									<div class="img__7"></div>
+									<div class="img__8">
+										<!-- <img src="img/8.png" alt=""> -->
+									</div>
+									<div class="img__9">
+										<!-- <img src="img/9.png" alt=""> -->
+									</div>
+									<div class="img__2">
+										<!-- <img src="img/2.png" alt=""> -->
+									</div>
+									<div class="img__7">
+										<!-- <img src="img/7.png" alt=""> -->
+									</div>
 								</div>
+							
+
 							</div>
 						</div>
 					</div>

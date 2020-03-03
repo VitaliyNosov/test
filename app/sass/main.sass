@@ -52,17 +52,21 @@ b, strong
 	width: 100%
 	height: 88px
 	background-color: #fff
+	font-weight: 550
 
 .menu__block
 	width: 100%
 	display: flex
+	align-items: center
 	justify-content: space-between
 
 .logo__block
-	width: 35%
+	width: 130px
 	height: 88px
 	display: flex
+	justify-content: flex-start
 	align-items: center
+	background: url(../img/Logo.png) no-repeat center
 
 .menu
 	width: 65%
@@ -78,6 +82,7 @@ b, strong
 	align-items: space-between
 	flex-wrap: wrap
 	margin-left: 15px
+	visibility: hidden
 	&:hover 
 		cursor: pointer
 
@@ -190,6 +195,7 @@ nav
 	width: 70%
 	margin-top: 20px
 	font-size: 18px
+	font-weight: 600
 
 .content__block__text__info
 	width: 100%
@@ -237,6 +243,7 @@ nav
 			height: 100%
 			margin: 25px
 			color: #B1C4C8
+			font-weight: 600
 				  
 
 .tabs-content-one
@@ -280,77 +287,85 @@ nav
 // footer 
 
 .content__block__fotos
-	width: 100%
+	max-width: 100%
 	overflow: hidden
 
 .row__one
 	max-width: 100% 
+	height: auto
 	display: flex
+	// flex-wrap: wrap
 			
 .row__two
 	max-width: 100% 
+	height: auto
 	display: flex
 
 .block__fotos
 	width: 100%
 	background-color: #fff
+	padding-top: 100px
 	padding-bottom: 150px
 	
 .img__3
 	width: 267px
 	height: 200px
-	background: url(../img/3.png) no-repeat 
-	background-size: cover
 	margin: 2px
+	background: url(../img/3.png) no-repeat
+	background-size: cover
+	
 .img__4
 	width: 151px
 	height: 200px
-	background: url(../img/4.png) no-repeat 
-	background-size: cover
 	margin: 2px
+	background: url(../img/4.png) no-repeat
+	background-size: cover
+	
 .img__1
 	width: 267px
 	height: 200px
-	background: url(../img/1.png) no-repeat 
-	background-size: cover
 	margin: 2px
+	background: url(../img/1.png) no-repeat
+	background-size: cover
+	
 .img__5
 	width: 267px
 	height: 200px
-	background: url(../img/5.png) no-repeat 
-	background-size: cover
 	margin: 2px
+	background: url(../img/5.png) no-repeat
+	background-size: cover
 .img__10
 	width: 151px
 	height: 200px
-	background: url(../img/10.png) no-repeat 
-	background-size: cover
 	margin: 2px
+	background: url(../img/10.png) no-repeat
+	background-size: cover
 
 .img__8
 	width: 321px
 	height: 200px
-	background: url(../img/8.png) no-repeat 
-	background-size: cover
 	margin: 2px
+	background: url(../img/8.png) no-repeat
+	background-size: cover
 .img__9
 	width: 283px
 	height: 200px
-	background: url(../img/9.png) no-repeat 
-	background-size: cover
 	margin: 2px
+	background: url(../img/9.png) no-repeat
+	background-size: cover
 .img__2
 	width: 184px
 	height: 200px
-	background: url(../img/2.png) no-repeat 
-	background-size: cover
 	margin: 2px
+	background: url(../img/2.png) no-repeat
+	background-size: cover
 .img__7
 	width: 317px
 	height: 200px
-	background: url(../img/7.png) no-repeat 
-	background-size: cover
 	margin: 2px
+	background: url(../img/7.png) no-repeat
+	background-size: cover
+
 		
 		
 // modal popup
@@ -382,7 +397,7 @@ nav
 	font-size: 18px
 	color: #000
 	background-color: #F5F7F8
-	box-shadow: 2px 78px 64px -31px rgba(181,181,181,0.84)
+	box-shadow: 2px 78px 64px -31px rgba(181,181,181,0.64)
 	position: absolute
 	border-radius: 5px 5px 0px 0px
 	top: 0
@@ -469,6 +484,13 @@ nav
 
 
 			
+// mobile menu
+
+.mobile__menu
+	display: none
+
+.menu__mobile__block
+	display: none
 
 
 
