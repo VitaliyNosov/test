@@ -988,7 +988,7 @@ a.ui-button:active,
 	box-shadow: 15px 15px 20px 15px rgba(240, 241, 243, 0.8);
 	font-weight: normal;
 	color: #000;
-	border-bottom: 3px solid #93E33D;
+	border-bottom: 3px solid #fff;
 }
 /* .ui-icon-background,
 .ui-state-active .ui-icon-background {

@@ -32,32 +32,43 @@
 
 	<!-- Custom HTML -->
 
-	<!-- modal__popup -->
+
+	
+
 
 	<div class="hidden">
-	
-		<form id="form" enctype="multipart/form-data" method="post">
-	
-	
-			<input data-translate-key="Email-First-Name" class="inputOne" id="nameFF" type="text" name="nameFF"
-				placeholder="Name" required /><br>
-			<input data-translate-key="Email-Last-Name" class="inputTwo" id="contactFF" name="contactFF" type="email"
-				placeholder="Email" required /></br>
-			<textarea class="textarea" id="projectFF" name="projectFF" cols="30" rows="10"></textarea></br>
-	
-			<div class="box">
-	
-				<div class="box-buuton">
-					<button data-translate-key="Email-Button" type="submit" id="submitFF">Отправить</button>
-				</div>
-	
+
+	<div class="form__container">
+
+			<form id="form" enctype="multipart/form-data" method="post">
+			<div class="form__info">
+				<img src="img/icon.png" alt="#">
+				Записатся
 			</div>
-	
-		</form>
-	
+			<div class="form-row">
+				<input type="text" id="email" required autocomplete="off"><label for="email">Ваше имя*</label>
+			</div>
+			<div class="form-row">
+				<input type="password" id="password" required autocomplete="off"><label for="password">Ваш email*</label>
+			</div>
+			<div class="form-row">
+				<input type="text" id="number" required autocomplete="off"><label for="number">Номер телефона*</label>
+			</div>
+			<div class="form__lorem">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, exercitationem magnam. Similique harum eveniet recusandae
+			</div>
+			<div class="button__content">
+				<button>Записатся</button>
+			</div>
+			</form>
+
+	</div>
+		
 	</div>
 
-	<!-- modal__popup -->
+
+
+
 
 	<div class="header">
 		<div class="container">
@@ -71,28 +82,36 @@
 						<li class="li_front"><a href="#">IT обучение</a></li>
 						<li id="li" class="li_front menu__list"><a href="#">На каникулах</a></li>
 						<li class="li_front"><a href="#">События</a></li>
-						<li href="#form" class="li_front popup"><a href="#">Контакты</a></li>
+						<li class="li_front"><a href="#">Контакты</a></li>
 						<li class="li_front"><a href="#">Вакансии</a></li>
 
 						
 					</ul>
 
+				
+
 				</div>
 
-					<div id="panel__menu" class="menu__hidden">
-
-						<div class="hidden__arrow"></div>
-					
-						<ul>
-							<li class="li__block"><a href="#"># Пункт меню 1</a></li>
-							<li class="li__block"><a href="#"># Меню 2</a></li>
-							<li class="li__block"><a href="#"># Подпункт 3</a></li>
-							<li class="li__block"><a href="#"># Меню 4</a></li>
-						</ul>
-					
-					</div>
+				</div>
 			</div>
+		</div>
 
+		<div class="menu__hidden">
+		
+			<div class="hidden__arrow"></div>
+		
+			<ul>
+				<li class="li__block"><a href="#"># Пункт меню 1</a></li>
+				<li class="li__block"><a href="#"># Меню 2</a></li>
+				<li class="li__block"><a href="#"># Подпункт 3</a></li>
+				<li class="li__block"><a href="#"># Меню 4</a></li>
+			</ul>
+		
+		</div>
+
+					
+			
+		<div class="container">
 			<div class="row">
 				<div class="col-xl-6">
 					<div class="content__block">
@@ -111,7 +130,7 @@
 							о бизнесе, навыки общения и управления собой.
 						</div>
 						<div class="content__block__button">
-							<button>Записаться</button>
+							<button href="#form" class="popup">Записаться</button>
 						</div>
 					</div>
 				</div>
@@ -220,26 +239,33 @@
 
 					</div>
 				</div>
+			</div>
+			
+				</div>
 
-				<div class="col-xl-12">
-					<div class="content__block__fotos">
-						<div class="row__one">
-							<div class="img__3"></div>
-							<div class="img__4"></div>
-							<div class="img__1"></div>
-							<div class="img__5"></div>
-							<div class="img__10"></div>
+				<div class="block__fotos">
+					<div class="container">					
+ 						<div class="col-xl-12">
+							<div class="content__block__fotos">
+								<div class="row__one">
+									<div class="img__3"></div>
+									<div class="img__4"></div>
+									<div class="img__1"></div>
+									<div class="img__5"></div>
+									<div class="img__10"></div>
+								</div>
+								<div class="row__two">
+									<div class="img__8"></div>
+									<div class="img__9"></div>
+									<div class="img__2"></div>
+									<div class="img__7"></div>
+								</div>
+							</div>
 						</div>
-						<div class="row__two">
-							<div class="img__8"></div>
-							<div class="img__9"></div>
-							<div class="img__2"></div>
-							<div class="img__7"></div>
-						</div> 
-					</div>
 					</div>
 				</div>
-			</div>
+
+			
 
 		</div>
 	</div>
